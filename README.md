@@ -1,75 +1,103 @@
-# React + TypeScript + Vite
+# 🛍️ Hazuni Store
+## Sistema de Gestão Comercial Simples e Prático
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Controle total do seu negócio na palma da mão — feito especialmente para você!**
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📋 Sobre o Projeto
+O **Hazuni Store** é um aplicativo de gestão completo, desenvolvido para ajudar você a organizar todas as partes do seu negócio de forma rápida e sem complicações.
+- ✅ Funciona 100% offline depois da primeira instalação
+- ✅ Dados salvos diretamente no seu celular
+- ✅ Visual moderno, com as suas cores e a sua marca
+- ✅ Disponível para Android e para iPhone (como app na tela inicial)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📱 Funcionalidades Principais
 
-## Expanding the ESLint configuration
+### 📊 Painel Principal (Dashboard)
+- Resumo rápido de vendas do dia
+- Total de vendas do mês
+- Quantidade de produtos cadastrados
+- Número de clientes registrados
+- Gráfico com vendas dos últimos 7 dias
+- Sua logo e identidade visual em destaque
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 📦 Produtos
+- Cadastro completo com nome, categoria, código, preços de compra e venda
+- Controle de estoque atual e estoque mínimo
+- Edição e exclusão de itens
+- Aviso quando produto está com estoque baixo
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 👥 Clientes
+- Cadastro de dados pessoais e contato
+- Histórico de compras por cliente
+- Busca rápida e edição de informações
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 💳 Vendas
+- Registro rápido de vendas
+- Suporte a diferentes formas de pagamento
+- Cálculo automático do total
+- Histórico completo de todas as vendas
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 📈 Relatórios
+- Resumo financeiro geral
+- Vendas por período
+- Distribuição por forma de pagamento
+- Alerta de estoque baixo
 
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🎨 Identidade Visual
+- **Cor principal**: Dourado `#D4AF37`
+- **Cores complementares**: Azul, Verde, Roxo
+- **Logo**: Sua marca exclusiva em todas as telas
+- **Tela de abertura**: Splash Screen personalizada com a sua logo
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🚀 Como Usar
 
-```
+### 📱 No Android
+1. Gere o arquivo `.apk`
+2. Instale normalmente no seu celular
+3. Abra e comece a usar — todos os dados ficam salvos
+
+### 📱 No iPhone
+Como não há arquivo de instalação direto, adicione como app na tela inicial:
+1. Abra o endereço do app no **Safari**
+2. Clique no ícone de Compartilhar 📤
+3. Escolha **Adicionar à Tela de Início**
+4. Confirme e pronto! Funciona exatamente como um app nativo
+
+---
+
+## 📂 Estrutura dos Arquivos Principais
+| Arquivo | O que ele faz |
+|---|---|
+| `public/logo.png` | Sua logo usada na tela de abertura e no cabeçalho |
+| `src/pages/Splash.tsx` | Tela de abertura personalizada |
+| `src/pages/Dashboard.tsx` | Painel principal com resumo e gráficos |
+| `src/components/Navegacao.tsx` | Menu inferior que aparece em todas as telas |
+| `src/App.tsx` | Configuração geral e rotas do aplicativo |
+
+---
+
+## 🔧 Tecnologias Usadas
+- **React + TypeScript**: Código organizado e seguro
+- **Tailwind CSS**: Visual moderno e responsivo
+- **Capacitor**: Preparado para gerar versões nativas de Android e iOS
+- **Recharts**: Gráficos claros e fáceis de entender
+- **Armazenamento Local**: Seus dados ficam só no seu aparelho
+
+---
+
+## 💡 Dicas Importantes
+- Sempre que quiser alterar textos ou tamanhos, procure nos arquivos correspondentes acima
+- Os dados não são enviados para servidores externos: tudo fica guardado só no seu celular
+- Para atualizar o app, basta substituir os arquivos e reinstalar ou recarregar a página
+
+---
+
+> **Desenvolvido especialmente para o seu negócio Hazuni Store** 🧡
